@@ -5,11 +5,11 @@ import { Title } from '../../Components/Texts/Texts'
 export function Home() {
   const MVV = [
     {
-      title: 'Missao',
+      title: 'Missão',
       desc: 'Nossa missao como empresa é'
     },
     {
-      title: 'Visao',
+      title: 'Visão',
       desc: 'Nossa visao como empresa é'
     },
     {
@@ -18,23 +18,6 @@ export function Home() {
     }
   ]
 
-  const redesSociais = [
-    {
-      title: 'WhatsApp',
-      href: '',
-      img: ''
-    },
-    {
-      title: 'Instagram',
-      href: '',
-      img: ''
-    },
-    {
-      title: 'Git Hub',
-      href: '',
-      img: ''
-    }
-  ]
   return (
     <Main>
       <div className="bg-neutral-800 p-5">
@@ -71,20 +54,12 @@ export function Home() {
         />
         <Form />
       </div>
-      <div className="m-5">
-        <Title title="Nossas" enface="Redes Sociais" />
-        <div className="grid grid-cols-6 gap-6 mt-5 mb-5 p-2 justify-center bg-amber-400">
-          {redesSociais.map(item => {
-            return (
-              <a href={item.href}>
-                <div className="col-span-6 sm:col-span-6 lg:col-span-1 bg-indigo-600 p-5 text-white rounded-full hover:bg-indigo-500">
-                  {item.title}
-                </div>
-              </a>
-            )
-          })}
+
+      <a href="https://www.seusite.com.br/whatsapp/" target="_blank">
+        <div className="float-right bg-green-300 text-white rounded-full p-5 m-5 hover:scale-105 transition-all duration-150">
+          Whats
         </div>
-      </div>
+      </a>
     </Main>
   )
 }
