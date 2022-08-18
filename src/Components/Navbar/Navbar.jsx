@@ -2,6 +2,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import logoTess from '../../Assets/TESS-Sem-fundo.png'
 
 const navigation = [
   {
@@ -36,12 +37,8 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-6 md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
-              <img
-                className="h-10 w-auto sm:h-10"
-                src="https://dsm01pap007files.storage.live.com/y4mVgzMjlJ0RMYLlnjnUA5kH-JldXNclUJCUeHgCnkfDr3jWNHLVWYSMSb3L_t6YhIWTp4cOeM_En0cSo4jlLqpW269TM8snbCvWCob-mtY7pkarmfTIy3y9MsTSobJeZuUg48dcdaJUichz8JSnFiyYeqIfyIiPcodO4Yzy6cOA2GjjY-Y0pGQO3lI1WKitNDrM6J2XH44X_8ILoyL3mVO-KzjwwcvfxJhlMkQVAT5m3k?encodeFailures=1&width=920&height=719"
-                alt=""
-              />
+            <a href="/">
+              <img className="w-auto h-14" src={logoTess} alt="" />
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
@@ -55,7 +52,7 @@ export function Navbar() {
                 <a
                   key={item.title}
                   href={item.href}
-                  className="text-base font-medium text-gray-100 hover:text-gray-600 hover:bg-gray-200 p-2 rounded-md"
+                  className="text-lg font-medium text-gray-100 hover:text-gray-600 hover:bg-gray-200 p-2 rounded-md"
                 >
                   {item.title}
                 </a>

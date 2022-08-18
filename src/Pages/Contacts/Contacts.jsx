@@ -1,28 +1,28 @@
 import { Form } from '../../Components/Forms/Forms'
 import { Main } from '../../Components/Secoes/Secoes'
 import { Title } from '../../Components/Texts/Texts'
+import WhatsAppImg from '../../Assets/Whats.png'
+import InstagramImg from '../../Assets/Instagram.png'
+import GitHubImg from '../../Assets/GitHub.png'
 
 export function Contacts() {
   const redesSociais = [
     {
-      title: 'WhatsApp',
-      href: '',
-      img: ''
+      href: 'https://api.whatsapp.com/send?phone=5549988801287&text=Ol%C3%A1!%20Tudo%20bem%3F',
+      img: WhatsAppImg
     },
     {
-      title: 'Instagram',
-      href: '',
-      img: ''
+      href: 'https://www.instagram.com/tess.developer/',
+      img: InstagramImg
     },
     {
-      title: 'Git Hub',
-      href: '',
-      img: ''
+      href: 'https://github.com/yurirsantos/cadastro-users',
+      img: GitHubImg
     }
   ]
   return (
     <Main>
-      <div className="p-5">
+      <div className="p-5 mb-5">
         <Title title="Envie uam dúvida para nossa" enface="Equipe" />
         <Form />
       </div>
@@ -32,9 +32,9 @@ export function Contacts() {
         <div className="flex justify-center gap-6 mt-5 mb-5 p-2">
           {redesSociais.map(item => {
             return (
-              <a href={item.href}>
-                <div className="bg-indigo-600 p-5 text-white rounded-full hover:bg-indigo-500">
-                  {item.title}
+              <a href={item.href} target="_blanck">
+                <div className="w-36 m-auto p-8 bg-indigo-700 rounded-full hover:bg-indigo-500 duration-150 hover:scale-105 transition-all">
+                  <img className="m-auto" src={item.img} alt="" />
                 </div>
               </a>
             )

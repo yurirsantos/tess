@@ -6,7 +6,7 @@ export function Form() {
   }
   return (
     <>
-      <div className="bg-neutral-700 p-3 w-3/5 m-auto rounded-md mt-5 mb-5">
+      <div className="bg-neutral-700 p-3 sm:w-3/5 m-auto rounded-md mt-5 mb-5">
         <div className="col-span-6 sm:col-span-4 mt-5 mb-5 p-2">
           <label
             htmlFor="nome"
