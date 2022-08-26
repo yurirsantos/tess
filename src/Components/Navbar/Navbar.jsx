@@ -3,6 +3,7 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import logoTess from '../../Assets/TESS-Sem-fundo.png'
+import { Link } from 'react-router-dom'
 
 const navigation = [
   {
@@ -49,13 +50,11 @@ export function Navbar() {
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
             {navigation.map(item => {
               return (
-                <a
-                  key={item.title}
-                  href={item.href}
-                  className="text-lg font-medium text-gray-100 hover:text-gray-600 hover:bg-gray-200 p-2 rounded-md"
-                >
-                  {item.title}
-                </a>
+                <Link key={item.title} to={item.href}>
+                  <span className="text-lg font-medium text-gray-100 hover:text-gray-600 hover:bg-gray-200 p-2 rounded-md">
+                    {item.title}
+                  </span>
+                </Link>
               )
             })}
           </Popover.Group>
@@ -94,15 +93,15 @@ export function Navbar() {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {navigation.map(item => (
-                    <a
+                    <Link
                       key={item.title}
-                      href={item.href}
+                      to={item.href}
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
                       <span className="ml-3 text-base font-medium text-gray-900">
                         {item.title}
                       </span>
-                    </a>
+                    </Link>
                   ))}
                 </nav>
               </div>
