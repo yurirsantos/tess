@@ -26,7 +26,7 @@ export function Home() {
           <img className="sm:w-1/3 m-auto" src={logoTess} alt="" />
         </div>
         <Title title="Acelere seu crescimento com nosso" enface="code" />
-        <div className="grid grid-rows-1 grid-flow-col gap-4 p-5 sm:w-3/5 m-auto">
+        <div className="grid grid-rows-3 sm:grid-rows-1 grid-flow-col gap-4 p-5 sm:w-3/5 m-auto ">
           {MVV.map(item => {
             return (
               <div className="bg-neutral-700 rounded-md p-5 hover:bg-neutral-900">

@@ -8,11 +8,11 @@ import GitHubImg from '../../Assets/GitHub.png'
 export function Contacts() {
   const redesSociais = [
     {
-      href: 'https://api.whatsapp.com/send?phone=5549988801287&text=Ol%C3%A1!%20Tudo%20bem%3F',
+      href: 'https://api.whatsapp.com/send?phone=55499994299411&text=Ol%C3%A1%20TESS!%20Gostaria%20de%20agendar%20uma%20conversa!',
       img: WhatsAppImg
     },
     {
-      href: 'https://www.instagram.com/tess.developer/',
+      href: 'https://www.instagram.com/tess.tec.br/',
       img: InstagramImg
     },
     {
@@ -33,7 +33,7 @@ export function Contacts() {
           {redesSociais.map(item => {
             return (
               <a href={item.href} target="_blanck">
-                <div className="w-36 m-auto p-8 bg-indigo-700 rounded-full hover:bg-indigo-500 duration-150 hover:scale-105 transition-all">
+                <div className="sm:w-36 m-auto p-8 bg-indigo-700 rounded-full hover:bg-indigo-500 duration-150 hover:scale-105 transition-all">
                   <img className="m-auto" src={item.img} alt="" />
                 </div>
               </a>
