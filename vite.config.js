@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://yurirsantos.github.io/tess/
+// https://vitejs.dev/config/
 export default defineConfig({
   base: 'https://tess.tec.br',
   plugins: [react()]
