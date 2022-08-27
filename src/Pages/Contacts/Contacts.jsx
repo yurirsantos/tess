@@ -8,7 +8,7 @@ import GitHubImg from '../../Assets/GitHub.png'
 export function Contacts() {
   const redesSociais = [
     {
-      href: 'https://api.whatsapp.com/send?phone=55499994299411&text=Ol%C3%A1%20TESS!%20Gostaria%20de%20agendar%20uma%20conversa!',
+      href: 'https://api.whatsapp.com/send?phone=5549999429941&text=Ol%C3%A1%20TESS!%20Gostria%20de%20agendar%20um%20conversa!s',
       img: WhatsAppImg
     },
     {
