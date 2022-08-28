@@ -2,7 +2,7 @@ import Swal from 'sweetalert2'
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
-export function Form() {
+export function Form(props) {
   const form = useRef()
 
   const sendEmail = e => {
@@ -43,62 +43,7 @@ export function Form() {
     <div>
       <div className="bg-neutral-700 p-3 sm:w-3/5 m-auto rounded-md mt-5 mb-5">
         <form ref={form} onSubmit={sendEmail}>
-          <div className="col-span-6 sm:col-span-4 mt-5 mb-5 p-2">
-            <label
-              htmlFor="user_nome"
-              className="block text-lg font-semibold text-white"
-            >
-              Nome
-            </label>
-            <input
-              type="text"
-              name="user_nome"
-              id="user_nome"
-              className="mt-1 block w-full shadow-sm sm:text-sm rounded-full bg-neutral-600 border-none placeholder-neutral-400 p-3 text-white"
-              placeholder="Informe seu nome..."
-            />
-          </div>
-
-          <div className="col-span-6 sm:col-span-4 mt-5 mb-5 p-2">
-            <label
-              htmlFor="user_email"
-              className="block text-lg font-semibold text-white"
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              name="user_email"
-              id="user_email"
-              className="mt-1 block w-full shadow-sm sm:text-sm rounded-full bg-neutral-600 border-none placeholder-neutral-400 p-3 text-white"
-              placeholder="Informe seu e-mail..."
-            />
-          </div>
-
-          <div className="m-5">
-            <label
-              htmlFor="message"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Mensagem
-            </label>
-            <div className="mt-1">
-              <textarea
-                name="message"
-                id="message"
-                rows={3}
-                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md p-2"
-              />
-            </div>
-          </div>
-          <div className="w-40 m-auto">
-            <input
-              className="w-28 sm:w-36 m-auto bg-indigo-600 rounded-full p-5 text-white text-center font-bold text-xl hover:bg-indigo-500 cursor-pointer transition-all duration-100 hover:scale-105"
-              type="submit"
-              value="Enviar"
-              id="buttonEnviar"
-            />
-          </div>
+          {props.children}
         </form>
       </div>
     </div>

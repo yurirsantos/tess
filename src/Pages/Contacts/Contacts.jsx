@@ -4,6 +4,7 @@ import { Title } from '../../Components/Texts/Texts'
 import WhatsAppImg from '../../Assets/Whats.png'
 import InstagramImg from '../../Assets/Instagram.png'
 import GitHubImg from '../../Assets/GitHub.png'
+import { Input, Textarea } from '../../Components/Forms/Inputs'
 
 export function Contacts() {
   const redesSociais = [
@@ -16,15 +17,58 @@ export function Contacts() {
       img: InstagramImg
     },
     {
-      href: 'https://github.com/yurirsantos/cadastro-users',
+      href: 'https://github.com/yurirsantos/',
       img: GitHubImg
     }
   ]
   return (
     <Main>
       <div className="p-5 mb-5">
-        <Title title="Envie uam dúvida para nossa" enface="Equipe" />
-        <Form />
+        <Title title="Entre em contato com nossa" enface="Equipe" />
+        <Form>
+          <Input
+            id="user_name"
+            name="user_name"
+            type="text"
+            htmlFor="user_name"
+            placeholder="Informe seu nome..."
+            label="Nome *"
+          />
+
+          <Input
+            id="user_email"
+            name="user_email"
+            type="text"
+            htmlFor="user_email"
+            placeholder="Informe seu e-mail..."
+            label="E-mail *"
+          />
+
+          <Input
+            id="user_numero"
+            name="user_numero"
+            type="number"
+            htmlFor="user_numero"
+            placeholder="Informe seu número..."
+            label="Número *"
+          />
+
+          <Textarea
+            id="message"
+            name="message"
+            htmlFor="message"
+            label="Mensagem *"
+          />
+
+          <div className="w-40 m-auto">
+            <input
+              className="w-28 sm:w-36 m-auto bg-indigo-600 rounded-full p-5 text-white text-center font-bold text-xl hover:bg-indigo-500 cursor-pointer transition-all duration-100 hover:scale-105"
+              type="submit"
+              value="Enviar"
+              id="buttonEnviar"
+            />
+          </div>
+        </Form>
       </div>
 
       <div className="bg-neutral-800 p-5">

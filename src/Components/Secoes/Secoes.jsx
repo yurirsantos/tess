@@ -19,3 +19,11 @@ export function Main(props) {
     </main>
   )
 }
+
+export function Div800(props) {
+  return <div className="bg-neutral-800 p-5">{props.children}</div>
+}
+
+export function Div(props) {
+  return <div className="p-5">{props.children}</div>
+}

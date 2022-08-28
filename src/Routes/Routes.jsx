@@ -1,7 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
+import { AboutUs } from '../Pages/AboutUs/AboutUs'
 import { Contacts } from '../Pages/Contacts/Contacts'
 import { Home } from '../Pages/Home/Home'
+import { Services } from '../Pages/Services/Services'
 
 export function Rotas() {
   return (
@@ -10,6 +12,8 @@ export function Rotas() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/Contacts" exact element={<Contacts />} />
+          <Route path="/Services" exact element={<Services />} />
+          <Route path="/AboutUs" exact element={<AboutUs />} />
         </Routes>
       </BrowserRouter>
     </div>

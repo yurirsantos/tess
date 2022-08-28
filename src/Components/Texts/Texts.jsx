@@ -1,8 +1,8 @@
 export function Title(props) {
   return (
-    <h1 className="font-bold text-white text-center text-lg sm:text-4xl">
+    <h1 className="font-normal text-white text-center text-2xl sm:text-4xl">
       {props.title}
-      <code className="text-violet-500"> {props.enface}</code>
+      <span className="text-violet-500 font-bold"> {props.enface}</span>
     </h1>
   )
 }

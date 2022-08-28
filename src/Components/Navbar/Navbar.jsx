@@ -4,6 +4,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import logoTess from '../../Assets/TESS-Sem-fundo.png'
 import { Link } from 'react-router-dom'
+import IconTess from '../../Assets/IconTESSPequenoSemFundo.png'
 
 const navigation = [
   {
@@ -12,15 +13,11 @@ const navigation = [
   },
   {
     title: 'Serviços',
-    href: ''
+    href: '/Services'
   },
   {
-    title: 'Portifólio',
-    href: ''
-  },
-  {
-    title: 'Quem Somos',
-    href: ''
+    title: 'Sobre Nós',
+    href: '/AboutUs'
   },
   {
     title: 'Contatos',
@@ -43,7 +40,7 @@ export function Navbar() {
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none">
+            <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-white hover:text-gray-500 focus:outline-none">
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
@@ -51,7 +48,7 @@ export function Navbar() {
             {navigation.map(item => {
               return (
                 <Link key={item.title} to={item.href}>
-                  <span className="text-lg font-medium text-gray-100 hover:text-gray-600 hover:bg-gray-200 p-2 rounded-md">
+                  <span className="text-lg font-medium text-white hover:text-gray-600 hover:bg-gray-200 p-2 rounded-md">
                     {item.title}
                   </span>
                 </Link>
@@ -74,18 +71,14 @@ export function Navbar() {
           focus
           className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
         >
-          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2">
+          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-neutral-700 divide-y-2">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
-                  />
+                  <img className="h-8 w-auto" src={IconTess} alt="" />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+                  <Popover.Button className="bg-neutral-700 rounded-md p-2 inline-flex items-center justify-center text-white hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
                 </div>
@@ -96,9 +89,9 @@ export function Navbar() {
                     <Link
                       key={item.title}
                       to={item.href}
-                      className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                      className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 group"
                     >
-                      <span className="ml-3 text-base font-medium text-gray-900">
+                      <span className="ml-3 text-base font-medium text-white group-hover:text-gray-800">
                         {item.title}
                       </span>
                     </Link>
