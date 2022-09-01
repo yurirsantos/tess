@@ -54,9 +54,9 @@ export function Contacts() {
           />
 
           <Textarea
-            id="message"
-            name="message"
-            htmlFor="message"
+            id="mensagem"
+            name="mensagem"
+            htmlFor="mensagem"
             label="Mensagem *"
           />
 

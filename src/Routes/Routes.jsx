@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 import { AboutUs } from '../Pages/AboutUs/AboutUs'
 import { Contacts } from '../Pages/Contacts/Contacts'
 import { Home } from '../Pages/Home/Home'
+import { Portfolio } from '../Pages/Portfolio/Portfolio'
 import { Services } from '../Pages/Services/Services'
 
 export function Rotas() {
@@ -14,6 +15,7 @@ export function Rotas() {
           <Route path="/Contacts" exact element={<Contacts />} />
           <Route path="/Services" exact element={<Services />} />
           <Route path="/AboutUs" exact element={<AboutUs />} />
+          {/* <Route path="/Portfolio" exact element={<Portfolio />} /> */}
         </Routes>
       </BrowserRouter>
     </div>

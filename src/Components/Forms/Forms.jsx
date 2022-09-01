@@ -19,9 +19,13 @@ export function Form(props) {
         result => {
           Swal.fire(
             'E-mail Enviado!',
-            'Seu e-mail foi enviado com sucesso para Fronteira Tec',
+            'Seu e-mail foi enviado com sucesso para TESS',
             'success'
           )
+
+          setTimeout(() => {
+            window.location.href = 'https://tess.tec.br'
+          }, 1500)
 
           const input_user_name = (document.getElementById('user_name').value =
             '')

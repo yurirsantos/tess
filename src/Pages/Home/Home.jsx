@@ -20,6 +20,33 @@ export function Home() {
     }
   ]
 
+  const motivos = [
+    {
+      title: 'Projeto exclusivo!',
+      desc: 'Desenvolvido de acordo com o seu desejo e necessidade!'
+    },
+    {
+      title: 'Inovação!',
+      desc: 'Projetos inovadores para atingir o máximo do público de seu negócio!'
+    },
+    {
+      title: 'Visibilidade na Internet!',
+      desc: 'Proporcionando sempre a melhor visibilidade na internet!'
+    },
+    {
+      title: 'Tecnologias Atuais!',
+      desc: 'Desenvolvidos com as melhores tecnolgoias atuais do mercado da TI!'
+    },
+    {
+      title: 'Qualidade!',
+      desc: 'Desenvolvidos com a melhor qualidade possível!'
+    },
+    {
+      title: 'Agilidade!',
+      desc: 'Sabemos o quanto é importante a entrega do seu projeto!'
+    }
+  ]
+
   return (
     <Main>
       <Div800>
@@ -42,43 +69,23 @@ export function Home() {
           })}
         </div>
       </Div800>
-      <Div className="p-5">
-        <Title title="Por que contratar a" enface="TESS" />
+      <Div>
+        <Title title="Por que escolher a" enface="TESS !?" />
+        <div className="sm:grid sm:grid-rows-2 block grid-flow-col gap-4 p-5 lg:w-3/5 m-auto ">
+          {motivos.map(item => {
+            return (
+              <div className="rounded-md p-5 border border-gray-50 border-opacity-10 sm:m-0 m-5">
+                <h1 className="text-white text-center text-xl font-bold m-3">
+                  {item.title}
+                </h1>
+                <p className="text-white text-center text-lg font-extralight">
+                  {item.desc}
+                </p>
+              </div>
+            )
+          })}
+        </div>
       </Div>
-      <Div800 className="bg-neutral-800 p-5">
-        <Title
-          title="Preencha o formulário e recebe um contato de um de nossos"
-          enface="especialistas!"
-        />
-        <Form>
-          <Input
-            id="user_name"
-            name="user_name"
-            type="text"
-            htmlFor="user_name"
-            placeholder="Informe seu nome..."
-            label="Nome"
-          />
-
-          <Input
-            id="user_email"
-            name="user_email"
-            type="email"
-            htmlFor="user_email"
-            placeholder="Informe seu e-mail..."
-            label="E-mail"
-          />
-
-          <div className="w-40 m-auto">
-            <input
-              className="w-28 sm:w-36 m-auto bg-indigo-600 rounded-full p-5 text-white text-center font-bold text-xl hover:bg-indigo-500 cursor-pointer transition-all duration-100 hover:scale-105"
-              type="submit"
-              value="Enviar"
-              id="buttonEnviar"
-            />
-          </div>
-        </Form>
-      </Div800>
     </Main>
   )
 }

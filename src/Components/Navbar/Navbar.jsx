@@ -16,12 +16,13 @@ const navigation = [
     href: '/Services'
   },
   {
-    title: 'Sobre Nós',
-    href: '/AboutUs'
-  },
-  {
     title: 'Contatos',
     href: '/Contacts'
+    // },
+    // {
+    //   title: 'Portifólio',
+    //   href: '/Portfolio'
+    //
   }
 ]
 

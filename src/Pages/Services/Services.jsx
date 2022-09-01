@@ -4,6 +4,8 @@ import imgDesenvolvimentoWeb from '../../Assets/christopher-gower-m_HRfLhgABo-un
 import imgBlog from '../../Assets/radek-grzybowski-eBRTYyjwpRY-unsplash.jpg'
 import imgPortifolio from '../../Assets/scott-graham-5fNmWej4tAA-unsplash.jpg'
 import imgLadingPage from '../../Assets/sigmund-4UGmm3WRUoQ-unsplash.jpg'
+import { Form } from '../../Components/Forms/Forms'
+import { Input, Textarea } from '../../Components/Forms/Inputs'
 
 export function Services() {
   return (
@@ -69,6 +71,46 @@ export function Services() {
           </p>
         </div>
       </Div>
+      <Div800>
+        <Title title="Ficou com alguma" enface="Dúvida?" />
+        <p className="text-white font-light mt-5 text-center">
+          Entre em contato com nossa equipe agora mesmo!
+        </p>
+        <Form>
+          <Input
+            id="user_name"
+            name="user_name"
+            type="text"
+            htmlFor="user_name"
+            placeholder="Informe seu nome..."
+            label="Nome *"
+          />
+          <Input
+            id="user_email"
+            name="user_email"
+            type="email"
+            htmlFor="user_email"
+            placeholder="Informe seu e-mail..."
+            label="E-mail *"
+          />
+
+          <Textarea
+            id="mensagem"
+            name="mensagem"
+            type="text"
+            htmlFor="mensagem"
+            label="Mensagem *"
+          />
+          <div className="w-40 m-auto">
+            <input
+              className="w-28 sm:w-36 m-auto bg-indigo-600 rounded-full p-5 text-white text-center font-bold text-xl hover:bg-indigo-500 cursor-pointer transition-all duration-100 hover:scale-105"
+              type="submit"
+              value="Enviar"
+              id="buttonEnviar"
+            />
+          </div>
+        </Form>
+      </Div800>
     </Main>
   )
 }
