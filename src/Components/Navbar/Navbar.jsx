@@ -87,12 +87,8 @@ export function Navbar() {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {navigation.map(item => (
-                    <Link
-                      key={item.title}
-                      to={item.href}
-                      className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 group"
-                    >
-                      <span className="ml-3 text-base font-medium text-white group-hover:text-gray-800">
+                    <Link key={item.title} to={item.href}>
+                      <span className="text-lg font-medium text-white hover:text-gray-600 hover:bg-gray-200 p-2 rounded-md">
                         {item.title}
                       </span>
                     </Link>
