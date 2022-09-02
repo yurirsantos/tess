@@ -5,6 +5,7 @@ import WhatsAppImg from '../../Assets/Whats.png'
 import InstagramImg from '../../Assets/Instagram.png'
 import GitHubImg from '../../Assets/GitHub.png'
 import { Input, Textarea } from '../../Components/Forms/Inputs'
+import { Button } from '../../Components/Buttons/Buttons'
 
 export function Contacts() {
   const redesSociais = [
@@ -60,13 +61,8 @@ export function Contacts() {
             label="Mensagem *"
           />
 
-          <div className="w-40 m-auto">
-            <input
-              className="w-28 sm:w-36 m-auto bg-indigo-600 rounded-full p-5 text-white text-center font-bold text-xl hover:bg-indigo-500 cursor-pointer transition-all duration-100 hover:scale-105"
-              type="submit"
-              value="Enviar"
-              id="buttonEnviar"
-            />
+          <div className="w-28 m-auto">
+            <Button id="buttonEnviar" value="Enviar" type="submit" />
           </div>
         </Form>
       </div>
