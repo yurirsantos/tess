@@ -164,9 +164,9 @@ export function Home() {
         <div className="grid grid-rows-4 sm:grid-rows-1 grid-flow-col gap-4 p-5 lg:w-3/5 m-auto">
           {tecnologias.map(item => {
             return (
-              <div>
+              <div className="hover:animate-bounce duration-150">
                 <img
-                  className="w-40 h-40 m-auto sm:w-14 sm:h-14 hover:animate-bounce duration-150"
+                  className="w-40 h-40 m-auto sm:w-14 sm:h-14"
                   src={item.src}
                   alt={item.alt}
                 />

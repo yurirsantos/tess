@@ -1,5 +1,5 @@
 import { Form } from '../../Components/Forms/Forms'
-import { Main } from '../../Components/Secoes/Secoes'
+import { Main, Div, Div800 } from '../../Components/Secoes/Secoes'
 import { Title } from '../../Components/Texts/Texts'
 import WhatsAppImg from '../../Assets/Whats.png'
 import InstagramImg from '../../Assets/Instagram.png'
@@ -24,7 +24,7 @@ export function Contacts() {
   ]
   return (
     <Main>
-      <div className="p-5 mb-5">
+      <Div>
         <Title title="Entre em contato com nossa" enface="Equipe" />
         <Form>
           <Input
@@ -65,9 +65,9 @@ export function Contacts() {
             <Button id="buttonEnviar" value="Enviar" type="submit" />
           </div>
         </Form>
-      </div>
+      </Div>
 
-      <div className="bg-neutral-800 p-5">
+      <Div800>
         <Title title="Nossas" enface="Redes Sociais" />
         <div className="flex justify-center gap-6 mt-5 mb-5 p-2">
           {redesSociais.map(item => {
@@ -80,7 +80,7 @@ export function Contacts() {
             )
           })}
         </div>
-      </div>
+      </Div800>
     </Main>
   )
 }
