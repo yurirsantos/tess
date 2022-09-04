@@ -87,9 +87,9 @@ export function Main(props) {
 }
 
 export function Div800(props) {
-  return <div className="bg-neutral-800 p-5">{props.children}</div>
+  return <div className="bg-neutral-800 pb-5 pt-5">{props.children}</div>
 }
 
 export function Div(props) {
-  return <div className="p-5">{props.children}</div>
+  return <div className="pb-5 pt-5">{props.children}</div>
 }
