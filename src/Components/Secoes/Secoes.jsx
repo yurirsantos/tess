@@ -23,19 +23,21 @@ export function Main(props) {
     }
   ]
   return (
-    <main>
+    <div>
       <header>
         <Navbar />
       </header>
-      {props.children}
-      <a
-        href="https://api.whatsapp.com/send?phone=5549999429941&text=Ol%C3%A1%20TESS!%20Gostria%20de%20agendar%20um%20conversa!"
-        target="_blank"
-      >
-        <div className="fixed z-50 right-5 top-3/4 mt-20 sm:mt-40 bg-green-400 text-white rounded-full hover:scale-105 transition-all duration-75 hover:animate-pulse">
-          <img className="w-14 m-auto" src={WhatsappImg} alt="" />
-        </div>
-      </a>
+      <main>
+        {props.children}
+        <a
+          href="https://api.whatsapp.com/send?phone=5549999429941&text=Ol%C3%A1%20TESS!%20Gostria%20de%20agendar%20um%20conversa!"
+          target="_blank"
+        >
+          <div className="fixed z-50 right-5 top-3/4 mt-20 sm:mt-40 bg-green-400 text-white rounded-full hover:scale-105 transition-all duration-75 hover:animate-pulse">
+            <img className="w-14 m-auto" src={WhatsappImg} alt="" />
+          </div>
+        </a>
+      </main>
       <footer className="p-4 bg-neutral-900 shadow md:px-6 md:py-8 border-t border-gray-500 mt-5">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a href="/" className="flex items-center mb-4 sm:mb-0">
@@ -82,7 +84,7 @@ export function Main(props) {
           © 2022 <span>TESS™</span>. Desenvolvendo sonhos em realidade!
         </div>
       </footer>
-    </main>
+    </div>
   )
 }
 

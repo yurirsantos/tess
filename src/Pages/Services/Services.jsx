@@ -17,14 +17,14 @@ export function Services() {
       <Div800>
         <Title title="Desenvolvimento" enface="Web" />
         <div className="w-[1200px] m-auto sm:flex sm:justify-between block">
-          <div className="w-[450px]">
+          <div className="w-[390px]">
             <p className="text-white font-light text-center sm:w-[500px] m-5 text-xl">
               Área da tecnologia voltada à construção de sites, aplicativos,
               softwares, bancos de dados e quaisquer outras ferramentas que, de
               certa forma, constroem a internet como conhecemos hoje.
             </p>
           </div>
-          <div className="w-[450px]">
+          <div className="w-[390px]">
             <img
               className="w-[300px] sm:w-96 m-auto rounded-md hover:scale-110 duration-150"
               src={imgDesenvolvimentoWeb}
@@ -36,14 +36,14 @@ export function Services() {
       <Div>
         <Title title="Landing" enface="page" />
         <div className="w-[1200px] m-auto sm:flex sm:justify-between block">
-          <div className="w-[450px]">
+          <div className="w-[390px]">
             <img
               className="w-[300px] sm:w-96 m-auto mt-5 rounded-md hover:scale-110 duration-150"
               src={imgLadingPage}
               alt=""
             />
           </div>
-          <div className="w-[450px]">
+          <div className="w-[390px]">
             <p className="text-white font-light text-center sm:w-[500px] m-5 text-xl">
               No marketing digital, uma lading page, em português 'página de
               destino', ou também conhecida como 'página de captura de
@@ -57,7 +57,7 @@ export function Services() {
       <Div800>
         <Title title="Portifólio" enface="Web" />
         <div className="w-[1200px] m-auto sm:flex sm:justify-between block">
-          <div className="w-[450px]">
+          <div className="w-[390px]">
             <p className="text-white font-light text-center sm:w-[500px] m-5 text-xl">
               Portifólio é uma compilação de materiais ou trabalhos
               desenvolvidos por um profissional (ouempresa) que demosntra
@@ -65,7 +65,7 @@ export function Services() {
               reunidas em um único local na web para acesso do publico geral.
             </p>
           </div>
-          <div className="w-[450px]">
+          <div className="w-[390px]">
             <img
               className="w-[300px] sm:w-96 m-auto rounded-md hover:scale-110 duration-150"
               src={imgPortifolio}
@@ -77,14 +77,14 @@ export function Services() {
       <Div>
         <Title title="Blog" enface="Web" />
         <div className="w-[1200px] m-auto sm:flex sm:justify-between block">
-          <div className="w-[450px]">
+          <div className="w-[390px]">
             <img
               className="w-[300px] sm:w-96 m-auto mt-5 rounded-md hover:scale-110 duration-150"
               src={imgBlog}
               alt=""
             />
           </div>
-          <div className="w-[450px]">
+          <div className="w-[390px]">
             <p className="text-white font-light text-center sm:w-[500px] m-5 text-xl">
               O blog é um site pessoal ou profissional que popularizou (e muito)
               a produção de conteúdo na internet, Hoje, é o principal eio de
