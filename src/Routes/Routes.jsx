@@ -11,11 +11,11 @@ export function Rotas() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/Contacts" exact element={<Contacts />} />
-          <Route path="/Services" exact element={<Services />} />
-          <Route path="/AboutUs" exact element={<AboutUs />} />
-          {/* <Route path="/Portfolio" exact element={<Portfolio />} /> */}
+          <Route path="/" element={<Home />} />
+          <Route path="/Contacts" element={<Contacts />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
+          {/* <Route path="/Portfolio" element={<Portfolio />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
